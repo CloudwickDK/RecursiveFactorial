@@ -10,10 +10,11 @@
 public class Factorial {
 
 	public static void main(String[] args) {
+		int input = 20;
 		/**
 		 * Calculate the factorial from 1 to 20.
 		 */
-		for (int num = 1; num <= 20; num++) {
+		for (int num = 1; num <= input; num++) {
 			long result = factorial(num);
 			System.out.println("Factorial of " + num + " is: " + result + ".");
 		}
