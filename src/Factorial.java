@@ -13,7 +13,11 @@ public class Factorial {
 		if (num == 0){
 			return result;
 		}
-		result = factorial(num-1)+ num;
+		try{
+		result = factorial(num-1) + num;
+		}catch(StackOverflowError e){
+			System.out.println("ouch!");
+		}
 		return result;
 	}
 	// 
