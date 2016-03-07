@@ -2,7 +2,7 @@
 public class Factorial {
 	
 	public static void main(String[] args){
-		int input = 4;
+		int input = 50000;
 		int result = factorial(input);
 		System.out.println(result);
 		
@@ -13,7 +13,8 @@ public class Factorial {
 		if (num == 0){
 			return result;
 		}
-		result = factorial(num-1)* num;
+		result = factorial(num-1)+ num;
 		return result;
 	}
+	// 
 }
